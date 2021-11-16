@@ -1,0 +1,62 @@
+@charset "utf-8";
+/*----------------------------------------------------------
+  ループ用
+ ----------------------------------------------------------*/
+ 
+.loop_wrap {
+  display: flex;
+  width: 100%;
+ /* max-height: 180px;*/
+  overflow: hidden;
+}
+
+.loop_wrap img {
+  width: auto;
+  /*height: 100%;*/
+}
+
+@keyframes loop {
+  0% {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes loop2 {
+  0% {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-200%);
+  }
+}
+@keyframes loop3 {
+  0% {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-200%);
+  }
+}
+@keyframes loop4 {
+  0% {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-200%);
+  }
+}
+
+.loop_wrap img:first-child {
+  animation: loop 50s -25s linear infinite;
+}
+
+.loop_wrap img {
+  animation: loop2 50s linear infinite;
+}
+/*.loop_wrap img:last-child {
+  animation: loop2 50s linear infinite;
+}*/
+
